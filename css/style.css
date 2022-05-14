@@ -1,0 +1,86 @@
+/*very small screens*/
+
+body {
+    margin: .5rem;
+    background-color: #93b8d7;
+    color: white;
+}
+#hamburger-menu {
+    color: white;
+    font-size: 2.5rem;
+    padding-right: .5em;
+}
+a {
+    color: white;
+}
+#social-links {
+    display: none;
+}
+main {
+    text-align: center;
+    font-family: Kaushan Script, fantasy;
+    margin-top: 23vh;
+
+ }
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 2rem;
+    margin-top: 2em;
+}
+footer {
+    display: none;
+}
+
+/*next smallest screens*/
+@media (min-width: 598px) {
+    #hamburger-menu {
+         display: none !important
+    }
+    #social-links {
+        display: block !important
+    }
+}
+
+/*medium screens*/
+@media (min-width: 768px) {
+    body {
+        background-image: url(../img/splash-md.jpg) !important;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+    }
+    footer {
+        display: block !important;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    main {
+        text-shadow: 1px 1px 1px 1px #153c43;
+    }
+}
+
+/*large screens*/
+@media (min-width: 992px) {
+    body {
+        background-image: url(../img/splash-lg.jpg) !important;
+    }
+    nav {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 5rem !important;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+/*extra large screens*/
+@media (min-width: 1200px) {
+    body {
+        background-image: url(../img/splash-xl.jpg) !important;
+    }
+}
